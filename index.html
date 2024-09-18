@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>呼吸法タイマー</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-animation">
+      <div class="bubble x1"></div>
+      <div class="bubble x2"></div>
+      <div class="bubble x3"></div>
+      <div class="bubble x4"></div>
+      <div class="bubble x5"></div>
+      <div class="bubble x6"></div>
+      <div class="bubble x7"></div>
+      <div class="bubble x8"></div>
+      <div class="bubble x9"></div>
+      <div class="bubble x10"></div>
+    </div>
+    <div class="container">
+      <h2>1:2呼吸タイマー</h2>
+      <p
+        style="
+          border-bottom: 1px solid #fff;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+        "
+      >
+        スタートボタンクリック後、3秒後にスタートします<br />4秒鼻で息を吸い、8秒かけて口からゆっくり吐いてください<br />呼吸中はできるだけ呼吸にだけ集中をしてください
+      </p>
+      <div id="totalTimer">01:00.0</div>
+      <div id="breatheTimer">4.0</div>
+      <div id="breathe" class="inhale">準備できましたか？</div>
+      <button class="start" onclick="startCountdown()">スタート</button>
+      <button class="stop" onclick="stopBreathing()">ストップ</button>
+      <button class="reset" onclick="resetBreathing()">リセット</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
